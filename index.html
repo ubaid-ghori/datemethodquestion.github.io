@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Current Date Display</title>
+</head>
+<body>
+    <!-- <h1>Current Date:</h1>
+    <p id="currentDate"></p> -->
+
+
+    <!-- <h1>Birthday Calculator</h1>
+    <label for="birthdate">Enter your birthdate:</label>
+    <input type="date" id="birthdate">
+    <button onclick="calculateAge()">Calculate Age</button>
+    <p id="age"></p> -->
+
+
+    <!-- <h1>Day of the Week</h1>
+    <label for="inputDate">Enter a date:</label>
+    <input type="date" id="inputDate">
+    <button onclick="getDayOfWeek()">Get Day of the Week</button>
+    <p id="dayOfWeek"></p> -->
+
+    <!-- <h1>Days Until a Future Date</h1>
+    <label for="futureDate">Enter a future date:</label>
+    <input type="date" id="futureDate">
+    <button onclick="calculateDaysUntil()">Calculate Days Until</button>
+    <p id="daysUntil"></p> -->
+
+    <!-- <h1>Weekend Checker</h1>
+    <label for="checkDate">Enter a date:</label>
+    <input type="date" id="checkDate">
+    <button onclick="checkWeekend()">Check Weekend</button>
+    <p id="result"></p> -->
+
+    <!-- <h1>Season Checker</h1>
+    <label for="inputDate">Enter a date:</label>
+    <input type="date" id="inputDate">
+    <button onclick="checkSeason()">Check Season</button>
+    <p id="seasonResult"></p> -->
+
+    <!-- <h1>Age and Days Calculator</h1>
+
+   
+    <label for="birthdate">Enter your birthdate:</label>
+    <input type="date" id="birthdate">
+    <br>
+    <label for="futureDate">Enter a future date:</label>
+    <input type="date" id="futureDate">
+    <br>
+    <button onclick="calculateAgeAndDays()">Calculate</button>
+    <br>
+    <p id="ageResult"></p>
+
+    
+    <label for="startDate">Enter a start date:</label>
+    <input type="date" id="startDate">
+    <br>
+    <label for="endDate">Enter an end date:</label>
+    <input type="date" id="endDate">
+    <br>
+    <button onclick="calculateDaysBetween()">Calculate</button>
+    <br>
+    <p id="daysBetweenResult"></p> -->
+
+
+    <!-- <h1>Working Days Calculator</h1>
+    <label for="startDate">Enter start date:</label>
+    <input type="date" id="startDate">
+    <br>
+    <label for="endDate">Enter end date:</label>
+    <input type="date" id="endDate">
+    <br>
+    <button onclick="calculateWorkingDays()">Calculate</button>
+    <br>
+    <p id="result"></p> -->
+    <script>
+    //    1st question
+        // const currentDate = new Date();
+        // document.getElementById('currentDate').innerHTML = currentDate.toDateString();
+
+        // 2 qusetion
+        // function calculateAge() {
+        //     const birthdate = new Date(document.getElementById('birthdate').value);
+        //     const currentDate = new Date();
+
+        //     const ageInMilliseconds = currentDate - birthdate;
+        //     const ageInYears = ageInMilliseconds / (365 * 24 * 60 * 60 * 1000);
+
+        //     document.getElementById('age').innerHTML = `Your age is approximately ${Math.floor(ageInYears)} years.`;
+        // }
+
+        // 3 question
+        // function getDayOfWeek() {
+        //     const inputDate = new Date(document.getElementById('inputDate').value);
+        //     const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        //     const dayOfWeek = daysOfWeek[inputDate.getDay()];
+
+        //     document.getElementById('dayOfWeek').innerHTML = `The day of the week for ${inputDate.toDateString()} is ${dayOfWeek}.`;
+        // }
+
+    // 4 question 
+    // function calculateDaysUntil() {
+    //         const futureDate = new Date(document.getElementById('futureDate').value);
+    //         const currentDate = new Date();
+
+    //         // Calculate the difference in milliseconds
+    //         const timeDifference = futureDate - currentDate;
+
+    //         // Convert milliseconds to days
+    //         const daysUntil = Math.ceil(timeDifference / (1000 * 60 * 60 * 24));
+
+    //         document.getElementById('daysUntil').innerHTML = `There are ${daysUntil} days until ${futureDate.toDateString()}.`;
+    //     }
+
+//  5 question
+// function checkWeekend() {
+//             const checkDate = new Date(document.getElementById('checkDate').value);
+//             const dayOfWeek = checkDate.getDay(); // 0 (Sunday) to 6 (Saturday)
+
+//             if (dayOfWeek === 0 || dayOfWeek === 6) {
+//                 document.getElementById('result').innerHTML = `The date ${checkDate.toDateString()} falls on a weekend (Saturday or Sunday).`;
+//             } else {
+//                 document.getElementById('result').innerHTML = `The date ${checkDate.toDateString()} does not fall on a weekend.`;
+//             }
+//         }
+
+//  7 question
+// function calculateAgeAndDays() {
+//             const birthdate = new Date(document.getElementById('birthdate').value);
+//             const futureDate = new Date(document.getElementById('futureDate').value);
+
+//             // Calculate age
+//             const ageInMilliseconds = futureDate - birthdate;
+//             const ageInYears = ageInMilliseconds / (365 * 24 * 60 * 60 * 1000);
+
+//             // Calculate days between
+//             const daysBetween = Math.abs(Math.floor((futureDate - new Date()) / (1000 * 60 * 60 * 24)));
+
+//             document.getElementById('ageResult').innerHTML = `Your age on ${futureDate.toDateString()} will be approximately ${Math.floor(ageInYears)} years.`;
+//             document.getElementById('daysBetweenResult').innerHTML = `There are ${daysBetween} days between ${birthdate.toDateString()} and ${futureDate.toDateString()}.`;
+//         }
+
+//         function calculateDaysBetween() {
+//             const startDate = new Date(document.getElementById('startDate').value);
+//             const endDate = new Date(document.getElementById('endDate').value);
+
+//             const daysBetween = Math.abs(Math.floor((endDate - startDate) / (1000 * 60 * 60 * 24)));
+
+//             document.getElementById('daysBetweenResult').innerHTML = `There are ${daysBetween} days between ${startDate.toDateString()} and ${endDate.toDateString()}.`;
+//         }
+
+//  8
+
+// function calculateWorkingDays() {
+//             const startDate = new Date(document.getElementById('startDate').value);
+//             const endDate = new Date(document.getElementById('endDate').value);
+
+//             // Calculate the number of days between the two dates
+//             const daysBetween = Math.floor((endDate - startDate) / (24 * 60 * 60 * 1000)) + 1;
+
+//             // Calculate the number of weekends in the date range
+//             const weekendDays = Math.floor(daysBetween / 7) * 2;
+
+//             // Calculate the number of weekends at the start and end that may be partially in the range
+//             const startDay = startDate.getDay();
+//             const endDay = endDate.getDay();
+
+//             if (startDay === 6) {
+//                 weekendDays--;
+//             } else if (startDay === 0) {
+//                 weekendDays -= 2;
+//             }
+
+//             if (endDay === 6) {
+//                 weekendDays -= 2;
+//             } else if (endDay === 0) {
+//                 weekendDays--;
+//             }
+
+//             // Calculate the number of working days by subtracting weekends
+//             const workingDays = daysBetween - weekendDays;
+
+//             document.getElementById('result').innerHTML = `There are ${workingDays} working days between ${startDate.toDateString()} and ${endDate.toDateString()}.`;
+//         }
+
+
+
+    </script>
+</body>
+</html>
